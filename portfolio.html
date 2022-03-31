@@ -4,43 +4,46 @@
 	<title>Adeyeye Olalekan</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="portfolio.css">
+	<link rel="stylesheet" href="profile-card.css">
 </head>
 <body>
 <header>
-	<div class="profile-container hidden">
+	<div class="profile-wrapper hidden">	
+		<div class="profile-container bubble" id="descend">
+			<div class="cancel-button" id="cancel">X</div>
 
-        <div class="top"></div>
+			<div class="top"></div>
 
-        <div class="middle">
+			<div class="middle">
 
-            <div class="img-container">
-                <img src="XENDER/IMG_20211230_102843_017.jpg" alt ="pic">
-            </div>
+				<div class="img-container">
+					<img src="XENDER/IMG_20211230_102843_017.jpg" alt ="pic">
+				</div>
 
-            <div class="info-container">
-                <div class = "name">Adeyeye Olalekan</div>
-                <div class= "age">26</div>
-            </div>
+				<div class="info-container">
+					<div class = "name">Adeyeye Olalekan</div>
+					<div class= "age">26</div>
+				</div>
 
-            <div class="location">Lagos</div>
-        </div>
+				<div class="location">Lagos</div>
+			</div>
 
-        <div class="bottom">
-            <div>
-                <div class="number">80K</div>
-                <div class="small">Followers</div>
-            </div>
-            <div>
-                <div class="number">803K</div>
-                <div class="small">Likes</div>
-            </div>
-            <div>
-                <div class="number">1.4K</div>
-                <div class="small">Photos</div>
-            </div>
-        </div>
-    </div>
-
+			<div class="bottom">
+				<div>
+					<div class="number">80K</div>
+					<div class="small">Followers</div>
+				</div>
+				<div>
+					<div class="number">803K</div>
+					<div class="small">Likes</div>
+				</div>
+				<div>
+					<div class="number">1.4K</div>
+					<div class="small">Photos</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="header-container">
 		<div class="site-head">yoruba.<span>dev</span></div>
 	
@@ -49,11 +52,11 @@
 		</div>
 	</div>
 </header>
-<main>
+<main id="main-header">
 	<article class="main" id="main">
 		<section class="name-info" id="name-info">
 
-			<div class ="pic">
+			<div class ="pic" id="pic">
 				<img class = "profile-pic" src="XENDER/IMG_20211230_102843_017.jpg" alt ="pic">
 				<div class="profile-dot"></div>
 			</div>
@@ -261,7 +264,7 @@
 	</article>
 
 </main>
-<footer>
+<footer id = "footer">
 	<section>
 	   <div class = "container">
 		   <div id = "home"><img src = "Download/hut.png" alt = "Home"> </div>
@@ -280,6 +283,11 @@
 	var projectFooter = document.getElementById("project");
 	var messageMe = document.getElementById("message-me");
 	var form = document.getElementById("form");
+	var drag = document.getElementById("descend");
+	var pic = document.getElementById("pic");
+	var cancel = document.getElementById("cancel");
+	var mainHeader = document.getElementById("main-header");
+	var footer = document.getElementById("footer");
 	
 	function changeToInfo(){
 		main.classList.add("hidden");
@@ -306,13 +314,28 @@
 		project.classList.add("hidden");
 		form.style.display = "flex";
 	}
+	function dropDown(){
+		mainHeader.classList.add("hidden");
+		drag.classList.remove("hidden");
+		drag.classList.remove("bubble");
+		drag.classList.add("descend");
+		drag.classList.remove("hidden");
+		footer.classList.add("hidden");
+	}
+	function cancelButton(){
+		mainHeader.classList.remove("hidden");
+		drag.classList.add("bubble");
+		drag.classList.remove("descend");
+		footer.classList.remove("hidden");
+	}
 
 	infoFooter.addEventListener('click', changeToInfo);
 	homeFooter.addEventListener('click', changeToHome);
 	projectFooter.addEventListener('click', changeToProject);
 	messageMe.addEventListener('click', changeToForm);
+	pic.addEventListener('click', dropDown);
+	cancel.addEventListener('click', cancelButton);
 
-	
 </script>
 </body> 
 </html>
