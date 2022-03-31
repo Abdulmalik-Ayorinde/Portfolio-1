@@ -91,29 +91,14 @@
     position: absolute;
     top: -400px;
     margin: 0 auto;
-    right: 40vw;
-    left: 40vw;
+    right: 40%;
+    left: 40%;
 }
 .descend{
     position: absolute;
-    top: 30vh;
-    right: 30vw;
-    left: 30vw;
-    bottom: 30vh;
-}
-@media screen and (max-width: 1024px) {
-    .bubble{
-        position: absolute;
-        top: -400px;
-        margin: 0 auto;
-        right: 25vw;
-        left: 25vw;
-    }
-    .descend{
-        position: absolute;
-        top: 20vh;
-        right: 10vw;
-        left: 10vw;
-        bottom: 20vh;
-    }
+    top: 100px;
+    margin: 0 auto;
+    right: 40%;
+    left: 40%;
+    bottom: 100px;
 }
