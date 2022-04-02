@@ -6,10 +6,16 @@
 
 body{
 	font-family: /*'Josefin Slab', Italiana, "DM Sans", "Eagle Lake",*/ Sen, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	margin:0;
+	margin: 0;
 	background-color: #E6E4E1;
 	position: relative;
-	min-width: 100vw;
+	width: 100vw;
+	height: 100vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
 }
 
 	.header-container{
@@ -24,6 +30,7 @@ body{
 	top: 0;
 	right: 0;
 	left: 0;
+	box-sizing: border-box;
 }
 
 .site-head{
@@ -50,11 +57,18 @@ article{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
-	min-height: 90vh;
-	text-align:  center;
+	box-sizing: border-box;
+	width: 80vw;
+	/* border: 5px solid black; */
 }
-
+section{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 80vw;
+}
 .pic{
 	display:flex;
 	flex-direction: column;
@@ -115,6 +129,7 @@ section div p{
 }
 
 footer{
+	width: 100vw;
 	position: fixed;
 	right:0;
 	left:0;
@@ -208,7 +223,7 @@ footer{
 }
 
 .info, .iframe-section{
-	width: 60vw;
+	/* width: 60vw; */
 	padding: 10px;
 	line-height: 30px;
 	text-align: justify;
@@ -217,6 +232,9 @@ footer{
 .info-page .link-photo-container{
 	margin-top: 15px;
 	margin-bottom: 5px;
+}
+.info-work{
+	font-size: 16px;
 }
 
 .aboutme-header > div, .project-header > div{
@@ -298,10 +316,6 @@ iframe{
 	color: white;
 }
 
-.project-page{
-	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
-}
 .form-article{
 	display: none;
 	flex-direction: column;
@@ -311,7 +325,7 @@ iframe{
 }
 .msg-section{
 	padding: 10px;
-	width: 60vw;
+	width: 80vw;
 	height: 20rem;
 	display: flex;
 	flex-direction: column;
@@ -349,7 +363,7 @@ form div{
 
 }
 form div input, textarea{
-	width: 100%;
+	width: 85%;
 	border: 0px solid black;
 	outline: none;
 	/* border-left: 2px solid orange;
@@ -444,6 +458,6 @@ button:hover{
 }
 @media screen and  (min-width: 1024px) {
 	.form-container{
-		width: 20rem;
+		width: 30rem;
 	}
 }
