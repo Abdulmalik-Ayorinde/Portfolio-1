@@ -454,9 +454,9 @@ button:hover{
 	}
 }
 
-@media screen and  (max-height: 519px) {
+@media screen and  (max-height: 550px) {
 	.main{
-		margin-top: 4rem;
+		margin-top: 3rem;
 	}
 	
 	.social-media{
