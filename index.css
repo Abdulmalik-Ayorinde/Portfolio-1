@@ -9,8 +9,7 @@ body{
 	margin: 0;
 	background-color: #E6E4E1;
 	position: relative;
-	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -237,9 +236,13 @@ footer{
 	font-size: 16px;
 }
 
-.aboutme-header > div, .project-header > div{
-	font-size: 40px;
+.aboutme-header > div, .project-header > div, .form-header > div{
+	font-size: 2em;
 	text-align: center;
+}
+
+.form-header{
+	margin-top: 4 rem;
 }
 
 .aboutme-header div span{
@@ -247,6 +250,10 @@ footer{
 	width: 150px;
 	margin-top: 5px;
 	margin-bottom: 10px;
+}
+
+.project-page{
+	margin-top: 4rem;
 }
 
 .iframe-section{
@@ -449,11 +456,11 @@ button:hover{
 
 @media screen and  (max-height: 519px) {
 	.main{
-		margin-top: 2.5rem;
+		margin-top: 4rem;
 	}
 	
 	.social-media{
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 	}
 }
 @media screen and  (min-width: 1024px) {
