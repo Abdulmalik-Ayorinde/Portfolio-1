@@ -236,7 +236,7 @@ footer{
 	font-size: 16px;
 }
 
-.aboutme-header > div, .project-header > div, .form-header > div{
+.aboutme-header, .project-header > div, .form-header > div{
 	font-size: 2em;
 	text-align: center;
 }
@@ -245,7 +245,7 @@ footer{
 	margin-top: 4 rem;
 }
 
-.aboutme-header div span{
+.aboutme-header span{
 	display: block;
 	width: 150px;
 	margin-top: 5px;
