@@ -88,7 +88,7 @@ section{
 
 .underline{
 	display: block;
-	width: 50%;
+	/* width: 50%; */
 	height: 5px;
 	background: orange;
 	border-radius: 0px 10px 0px 10px;
@@ -223,9 +223,11 @@ footer{
 
 .info, .iframe-section{
 	/* width: 60vw; */
-	padding: 10px;
 	line-height: 30px;
 	text-align: justify;
+}
+.info{
+	padding: 10px;
 }
 
 .info-page .link-photo-container{
@@ -250,7 +252,7 @@ footer{
 	width: inherit;
 	flex-wrap: wrap;
 	/* margin-bottom: 3rem; */
-	padding: 0px 0px 50px 0px;
+	/* padding: 0px 0px 50px 0px; */
 	box-sizing: border-box;
 	/* box-shadow: -5px -5px 10px grey, 5px 5px 10px white; */
 }
@@ -402,7 +404,7 @@ footer{
 }
 
 .iframe-section{
-	margin-top: 10px;
+	/* margin-top: 10px; */
 	width: 60vw;
 	display:flex;
 	flex-direction: column;
@@ -417,7 +419,7 @@ iframe{
 	border-bottom: 5px solid orange;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	padding: 10px;
+	padding: 0px 10px;
 }
 
 .iframe-div{
