@@ -318,7 +318,7 @@ footer{
 	padding: 5px;
 	margin: 5px 0px 0px 0px;
 	font-size: 20px;
-	font-weight: 900;
+	/* font-weight: 900; */
 	
 }
 .skill-head{
@@ -340,9 +340,6 @@ footer{
 }
 .skill-type img{
 	margin-right: 10px;
-}
-.code-name{
-	font-weight: 900;
 }
 .skill-bar div{
 	display:flex;
