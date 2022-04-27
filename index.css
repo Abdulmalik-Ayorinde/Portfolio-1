@@ -128,7 +128,7 @@ section div p{
 	box-shadow: 0px 5px 5px grey;
 	border-right-width: 5px;
 	border-left-width: 5px;
-	letter-spacing: 1px;
+	/* letter-spacing: 1px; */
 }
 
 footer{
@@ -451,7 +451,7 @@ iframe{
 	padding: 1px 3px;
 	font-weight: 900;
 	font-size: 13px;
-	letter-spacing: 2px;
+	/* letter-spacing: 2px; */
 	text-align: center;
 	margin-top: 15px;
 	margin-bottom: 5px;
