@@ -8,7 +8,6 @@
     transition-duration: 0.5s;
     color: rgb(36, 35, 35);
     font-size: 16px;
-    
 }
 
 .profile-container{
@@ -27,7 +26,7 @@
 
 .top{
     /* background-color: orange; */
-    background: linear-gradient(rgba(255, 166, 0, 0.442),rgba(255, 166, 0, 0.442)), url("Xender\\IMG_20211230_102843_017.jpg");
+    background: linear-gradient(rgba(255, 166, 0, 0.442),rgba(255, 166, 0, 0.442)), url("Xender\\DSC_0660.JPG");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -42,7 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 120px;
     background-color: rgb(252, 247, 247);
     border-bottom: 2px solid white;
 }
@@ -52,7 +51,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -100px;
+    margin-top: -80px;
 }
 .img-container img{
     width: 100px;
